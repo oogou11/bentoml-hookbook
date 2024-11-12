@@ -1,0 +1,83 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+lib/
+lib64/
+opt/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+*.cover
+*.py,cover
+coverage.xml
+nosetests.xml
+test_*.xml
+*.coverage
+*.hypothesis/
+*.pytest_cache/
+
+# PyInstaller
+#  Usually these files are written by PyInstaller
+#  https://pyinstaller.readthedocs.io/en/stable/spec-files.html
+*.manifest
+*.spec
+
+# Pyenv
+.python-version
+
+# venv
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# virtualenv
+*.env/
+*.venv/
+.venv/
+
+# mypy
+.mypy_cache/
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.emacs*
+*.vim
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Log files
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
