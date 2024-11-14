@@ -31,6 +31,7 @@ To ensure the example code runs smoothly, it is recommended to set up your envir
 
 - **NVIDIA Driver**: A version compatible with CUDA 12.4
 - **cuDNN**: A version compatible with CUDA 12.4
+- **all-MiniLM-L6-v2 Download**:  [If downloading is difficult, you can download via cloud storage.](https://pan.baidu.com/s/1PQW1-5DPo1Geh46Hr10NgA?pwd=5hv5)
 
 ## Installation Guide
 
