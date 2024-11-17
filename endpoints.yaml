@@ -1,0 +1,34 @@
+# endpoint.yaml
+# Configuration file for service endpoints and related parameters to support various modules.
+
+# Configuration for the MySQL database
+mysql:
+  host: localhost      # Database hostname or IP address
+  port: 3306           # Database port, default is 3306
+  user: root           # Database username
+  password: ""         # Database password (recommend using environment variables or a secret management service)
+  database: mydb       # Name of the database to connect to
+  pool_size: 10        # Maximum number of connections in the connection pool
+  timeout: 30          # Timeout for establishing a database connection (in seconds)
+
+# Configuration for the Milvus vector database
+milvus:
+  host: localhost      # Milvus service hostname or IP address
+  port: 19530          # Milvus service port, default is 19530
+  collection: my_collection  # Default collection name
+  timeout: 30          # Service connection timeout (in seconds)
+  consistency_level: Strong  # Consistency level: Strong, Session, Bounded, Eventual
+  username: admin      # Username (if authentication is enabled)
+  password: ""         # Password (if authentication is enabled)
+
+# Configuration for LLM (Large Language Model) services
+llm:
+  provider: openai       # Model provider, e.g., openai, huggingface, custom
+  model_name: gpt-4      # Model name or ID, e.g., gpt-4, llama-2
+  api_key: ""            # API key (recommend loading from environment variables or a secret manager)
+  endpoint_url: ""       # Custom endpoint URL (for self-hosted or non-managed services)
+  max_tokens: 1000       # Maximum number of tokens to generate
+  temperature: 0.7       # Diversity of generated text (0 is deterministic; higher values are more random)
+  top_p: 0.9             # Cumulative probability for token sampling, controlling quality
+  retries: 3             # Number of retries in case of failure
+  timeout: 60            # Service connection timeout (in seconds)
